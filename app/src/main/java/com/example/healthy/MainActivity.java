@@ -30,17 +30,17 @@ public class MainActivity extends AppCompatActivity {
                 switch (position) {
                     case 0: {
                         tab.setIcon(R.drawable.ic_vitamina);
-                        final TabItem tabVita=findViewById(R.id.tab1);
+                        final TabItem tabVita=findViewById(R.id.tabVitamina);
                         break;
                     }
                     case 1: {
                         tab.setIcon(R.drawable.ic_proteina);
-                        final TabItem tabProteinas=findViewById(R.id.tab2);
+                        final TabItem tabProteinas=findViewById(R.id.tabProteina);
                         break;
                     }
                     case 2: {
                         tab.setIcon(R.drawable.ic_informacion);
-                       final TabItem tabInformacion=findViewById(R.id.tab3);
+                       final TabItem tabInformacion=findViewById(R.id.tabInfo);
                         break;
                     }
                     default:

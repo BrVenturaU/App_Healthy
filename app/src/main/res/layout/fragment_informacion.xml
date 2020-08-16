@@ -7,103 +7,135 @@
     tools:context=".InformacionFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/tvTitulo5"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center"
-        android:text="@string/title5"
-        android:textColor="#000000"
-        android:textSize="18sp"
-        android:textStyle="bold"  />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tvTitulo5"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/titleInfo"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"  />
 
-    <ImageView
-        android:id="@+id/Img3"
-        android:layout_width="85dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="75dp"
-        android:src="@drawable/img_ugb" />
+        <ImageView
+            android:id="@+id/Img3"
+            android:layout_width="156dp"
+            android:layout_height="156dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/img_ugb" />
 
-    <ImageView
-        android:id="@+id/Img4"
-        android:layout_width="124dp"
-        android:layout_height="88dp"
-        android:layout_gravity="left"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="180dp"
-        android:src="@drawable/android"
-        tools:ignore="RtlHardcoded" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="24dp">
+            <ImageView
+                android:id="@+id/Img4"
+                android:layout_width="124dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:src="@drawable/android"
+                tools:ignore="RtlHardcoded" />
 
-    <ImageView
-        android:id="@+id/Img5"
-        android:layout_width="99dp"
-        android:layout_height="79dp"
-        android:layout_gravity="right"
-        android:layout_marginTop="180dp"
-        android:layout_marginEnd="70dp"
-        android:src="@drawable/ic_salud"
-        tools:ignore="RtlHardcoded" />
+            <ImageView
+                android:id="@+id/Img5"
+                android:layout_width="99dp"
+                android:layout_height="79dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_salud"
+                tools:ignore="RtlHardcoded" />
+        </LinearLayout>
 
-    <TextView
-        android:id="@+id/tvH1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/descrip5"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center"
-        android:layout_marginTop="290dp"
-        android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/tvH1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/descInfo"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textColor="#000000"/>
 
-    <TextView
-        android:id="@+id/tvNombres"
-        android:layout_width="259dp"
-        android:layout_height="81dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="300dp"
-        android:gravity="center"
-        android:lineSpacingExtra="5dp"
-        android:text="@string/nombres" />
+        <TextView
+            android:id="@+id/tvAlumno1"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/alumno_1"/>
+        <TextView
+            android:id="@+id/tvAlumno2"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/alumno_2"/>
 
-    <TextView
-        android:id="@+id/tvH2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Institucion:"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center"
-        android:layout_marginTop="400dp"
-        android:textColor="#000000"/>
 
-    <TextView
-        android:id="@+id/tvInstitucion"
-        android:layout_width="259dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="410dp"
-        android:gravity="center"
-        android:lineSpacingExtra="5dp"
-        android:text="@string/institucion" />
+        <TextView
+            android:id="@+id/tvH2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Institucion:"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textColor="#000000"/>
 
-    <TextView
-        android:id="@+id/tvH3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Catedratico"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center"
-        android:layout_marginTop="470dp"
-        android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/tvInstitucion"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/institucion" />
 
-    <TextView
-        android:id="@+id/tvMaestroNombre"
-        android:layout_width="259dp"
-        android:layout_height="50dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="490dp"
-        android:gravity="center"
-        android:lineSpacingExtra="5dp"
-        android:text="@string/maestro" />
+        <TextView
+            android:id="@+id/tvH3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Catedratico"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/tvMaestroNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/maestro" />
+
+        <TextView
+            android:id="@+id/tvH4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Materia"
+            android:textSize="18sp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/tvMateriaNombre"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:lineSpacingExtra="5dp"
+            android:text="@string/materia" />
+    </LinearLayout>
 
 </FrameLayout>
