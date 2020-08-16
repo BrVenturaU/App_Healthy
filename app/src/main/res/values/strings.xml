@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Healthy</string>
+    <string name="tab1">Ej1</string>
+    <string name="tab2">Ej2</string>
+
+
+
+    <!--Frag3-->
+    <string name="title3">VITAMINAS Y MINERALES</string>
+    <string name="descrip3">Las vitaminas y los minerales son sustancias imprescindibles para el buen funcionamiento del organismo, porque intervienen en numerosas
+        reacciones metabólicas. A pesar de que no aportan energía se necesitan en cantidades mínimas y es imprescindible que se tomen por medio de los alimentos.</string>
+
+    <!--Frag4-->
+    <string name="title4">PROTEINAS</string>
+    <string name="descrip4">Estas son otra fuente de energía y son esenciales para el crecimiento y la restauración de todos los tejidos en su cuerpo.</string>
+    <string name="descrip4.1"> Elige una variedad de carnes magras y aves de corral, mariscos, frijoles y chícharos secos, huevos, productos de soya procesados, frutos
+        secos sin sal y semillas. Asegúrate de comer productos del mar cada semana.</string>
+
+    <!--Frag5-->
+    <string name="title5">INFORMACION</string>
+    <string name="descrip5">Equipo de Trabajo:</string>
+    <string name="nombres">➣ Wendy Azucena Solórzano Hernández ➢ Brandon Manuel Ventura Umaña</string>
+    <string name="institucion">Universidad Gerardo Barrios</string>
+    <string name="maestro">ING. William Alexander Ventura Ventura</string>
+
+
+</resources>
