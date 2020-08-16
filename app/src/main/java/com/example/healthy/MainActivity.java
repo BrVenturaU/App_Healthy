@@ -1,23 +1,31 @@
 package com.example.healthy;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.app.ActionBar;
+import android.os.Build;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.view.Window;
 import android.widget.Toast;
+import android.widget.Toolbar;
 
 import com.google.android.material.badge.BadgeDrawable;
 import com.google.android.material.tabs.TabItem;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
-public class MainActivity extends FragmentActivity {
+public class MainActivity extends AppCompatActivity {
     private TabLayout tabLayout;
     private ViewPager2 viewPager2;
-    //private TabItem tabProteina, tabVitamina, tabInfo;
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,5 +62,28 @@ public class MainActivity extends FragmentActivity {
 
         tabLayoutMediator.attach();
 
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.tool_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        int id = item.getItemId();
+        switch (id){
+            case R.id.configuracion:{
+                return true;
+            }
+            case R.id.salir:{
+                finish();
+                return true;
+            }
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }
