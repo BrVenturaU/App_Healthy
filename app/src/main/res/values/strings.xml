@@ -3,7 +3,14 @@
     <string name="tabProteina">Proteínas</string>
     <string name="tabVitamina">Vitaminas</string>
     <string name="tabInfo">Información</string>
+    <string name="actConfiguracion">Configuración</string>
     <string name="develop">Powered by H_Wendy and BrHeat devs.</string>
+    <string name="tvConfiguracion">Configure su nombre en la aplicación</string>
+    <string name="etConfiguracion">Nombre...</string>
+    <string name="btnConfiguracionGuardar">Guardar</string>
+    <string name="btnConfiguracionCancelar">Cancelar</string>
+    <string name="snbConfiguracionExito">Se ha registrado su nombre de usuario.</string>
+    <string name="snbConfiguracionError">El nombre es requerido.</string>
 
 
     <!--Frag3-->

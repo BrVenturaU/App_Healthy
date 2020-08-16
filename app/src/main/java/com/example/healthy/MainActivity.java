@@ -8,6 +8,9 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.app.ActionBar;
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.Menu;
@@ -30,6 +33,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        SharedPreferences myPreferences = getSharedPreferences("userData", Context.MODE_PRIVATE);
+
+        String nombreUsuario = myPreferences.getString("nombreUsuario","");
+        if(!nombreUsuario.isEmpty())
+            Toast.makeText(getApplicationContext(), "Bienvenido "+nombreUsuario, Toast.LENGTH_SHORT).show();
 
         tabLayout = findViewById(R.id.tabLayout);
         viewPager2 = findViewById(R.id.viewPager);
@@ -76,6 +85,8 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
         switch (id){
             case R.id.configuracion:{
+                Intent intent = new Intent(MainActivity.this, ConfigActivity.class);
+                startActivity(intent);
                 return true;
             }
             case R.id.salir:{
