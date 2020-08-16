@@ -1,8 +1,9 @@
 <resources>
-    <string name="app_name">Healthy</string>
+    <string name="app_name">Healthy App</string>
     <string name="tabProteina">Proteínas</string>
     <string name="tabVitamina">Vitaminas</string>
     <string name="tabInfo">Información</string>
+    <string name="develop">Powered by H_Wendy and BrHeat devs.</string>
 
 
     <!--Frag3-->
